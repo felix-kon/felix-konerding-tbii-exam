@@ -21,7 +21,7 @@ root.title("Spotichord")
 root.wm_minsize(375, 812)
 root.wm_geometry('375x812')
 # replace following variable with the correctly named file and the correct path if necessary
-userdatafile = "users_data.csv"
+userdatafile = "user_data/users_data.csv"
 
 # set up two fonts for easy and consistent design language
 helv16 = tkinter.font.Font(family="Helvetica", size=16, weight="normal")
