@@ -12,8 +12,9 @@ This repository contains:
 ## Instructions to run Spotichord:
 
 Clone my repository in a location of your choice
+```
 git clone https://github.com/felix-kon/felix-konerding-tbii-exam
-
+```
 
 
 Install Spotipy module
