@@ -3,7 +3,7 @@ This repository contains Felix Konerding's submission for Tech Basics II at LEUP
 
 This repository contains:
 
-- Project Report: Felix_Konerding_TBII_Report.pdf
+- Project Report: 3044697_Konerding_Felix_TBII_Spotichord_Report.docx.pdf
 - Main App file: Spotichord.py
 - Images folder with background images
 - auth file for spotipy authorization
