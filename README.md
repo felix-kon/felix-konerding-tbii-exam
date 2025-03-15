@@ -8,6 +8,9 @@ This repository contains:
 - Images folder with background images
 - auth file for spotipy authorization
 
+DEMO VIDEO OF KEY FUNCTIONALITY:
+https://youtu.be/ukMxnArhZF4
+
 ---
 ## Note on code references
 For easy readability and clarity, the referenced code is marked as such directly in the Spotichord.py file and not specifically listed in the PDF on top of that.
