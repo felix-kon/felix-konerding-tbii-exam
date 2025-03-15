@@ -9,6 +9,10 @@ This repository contains:
 - auth file for spotipy authorization
 
 ---
+## Note on code references
+For easy readability and clarity, the referenced code is marked as such directly in the Spotichord.py file and not specifically listed in the PDF on top of that.
+
+---
 ## Instructions to run Spotichord:
 
 Clone my repository in a location of your choice
