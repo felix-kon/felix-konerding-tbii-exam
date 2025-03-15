@@ -83,7 +83,7 @@ def load_account():
                                              ' set up properly and you’re connected to the internet. ⚠︎ ⚡︎')
     playlists = spot.user_playlists(user_info['id'])
     # enumerating the playlists (also taken from TBI submission, originally based on Spotipy documentation)
-    while playlists:  # The code in line 43 to 51 comes from the spotipy documentation and was slightly adjusted
+    while playlists:  # The code in line 88 to 90 comes from the spotipy documentation and was slightly adjusted
         for i, playlist in enumerate(playlists['items']):
             all_names.append(playlist['name'])
             playlist['index'] = i + 1 + playlists['offset']
