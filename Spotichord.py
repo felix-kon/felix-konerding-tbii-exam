@@ -119,9 +119,10 @@ def load_playlist(selected_playlist_df):
 
 
 # this function is taken from the class materials and the example project
-def set_background(root, image_file_path):
+def set_background(root, image_name):
     """This function was inspired by Robin Paul and sets the background image
     """
+    image_file_path = f"backgrounds_img/{image_name}"
     img = Image.open(image_file_path)
     photo = ImageTk.PhotoImage(img)
     label = tk.Label(root, image=photo)
