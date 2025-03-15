@@ -28,7 +28,7 @@ helv16 = tkinter.font.Font(family="Helvetica", size=16, weight="normal")
 helv28 = tkinter.font.Font(family="Helvetica", size=28, weight="bold")
 
 # define scope for spotipy API
-scope = "playlist-read-private,playlist-read-collaborative"
+scope = "playlist-read-private playlist-read-collaborative"
 default_user_id = "316x3nwc2vnxr3azoeldv5wrn2p4?si=dba409d76a7348a2"
 all_uri = []
 all_names = []
@@ -52,6 +52,7 @@ the program does change the global variable if the spotipy interaction fails wit
 so that the new developer profile can be loaded and they can access their own playlists
 '''
 # use spotipy's authentication to access the account — this was taken over from TBI class & project
+# the authentication process was taught in TBI class and used in the TBI project
 spot = spotipy.Spotify(auth_manager=SpotifyOAuth(
     client_id=auth.client_id_spot,
     client_secret=auth.secret_spot,
@@ -65,7 +66,7 @@ a specific, chosen playlist.
 this code was taken from my TBI project and modified slightly for the purpose of this app
 '''
 
-
+# this function loads the linked spotify account and fetches the linked playlists
 def load_account():
     global all_uri, all_names, full_gallery, full_gallery_df, default_user_id
     # create user profile referencing Spotify's API
@@ -98,6 +99,7 @@ def load_account():
 
 
 # this function loads a specific playlist that the user will have selected in the full-gallery overview ('playlists')
+# this code was taken from the TBI project to ennumerate playlists and songs within playlists
 def load_playlist(selected_playlist_df):
     global full_gallery, full_gallery_df, tracks
     uri = selected_playlist_df.iloc[0]['href']  # This gets the URI of the chosen playlist.
