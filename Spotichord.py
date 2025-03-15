@@ -119,10 +119,7 @@ def load_playlist(selected_playlist_df):
 # this function is taken from the class materials and the example project
 def set_background(root, image_file_path):
     """This function was inspired by Robin Paul and sets the background image
-
-    You need to specify the variable that creates the gui frame and the file path of the image
     """
-
     img = Image.open(image_file_path)
     photo = ImageTk.PhotoImage(img)
     label = tk.Label(root, image=photo)
@@ -132,10 +129,6 @@ def set_background(root, image_file_path):
 
 # this function is taken from the class materials and the example project
 def clear_widgets():
-    """This function will destroy any widgets you created
-
-    You need to specify the variable that creates the gui frame
-    """
     for i in root.winfo_children():
         i.destroy()
 
